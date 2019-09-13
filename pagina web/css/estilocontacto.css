@@ -1,0 +1,74 @@
+
+@import url(https://fonts.googleapis.com/css?family=ABeeZee);
+@import url(contactanos.html);
+
+/*El estilo general del formulario*/
+form {
+    width: 450px;
+    margin: auto;
+    background: #255;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+/*Titulo del foormulario*/
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*Aqui se especifica los parametros que tendran los cuadrados de texto*/
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+/*El tamaño de los cuadrados de texto*/
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    
+}
+
+/*Se mdefinen los parametros para que sea responsive, en este caso si el maximo de ancho es de 480px entonces el tasmñao del form será del 100%*/
+@media (max-width:480px) {
+    
+    form{
+        width: 100%;
+    }
+}
+
+/*Es el cuadrado que se colocara rojo cuando el campo este vacio o invalido */
+input:invalid{
+    border: 1px solid red;
+}
+
+/*Es el cuadrado que se colocara cuando el campo este correcto */
+imput:valid{
+    border: 1px solid rgb(0, 201, 201);
+}
+
+/*Se definen los ti'pirijillos dfe datirijillos utilizados en el formulario*/
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+fieldset {
+
+/* requerido para estilizar adecuadamente elementos
+   de formulario en navegadores basados en WebKit */
+   -webkit-appearance: none;
+  
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}

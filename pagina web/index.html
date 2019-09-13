@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<!--Aqui abajo se enlazan lo diferentes link que se utilizaran en el index, ya sea css o jquery. Tambien se le colocan valores por defecto de responsive-->
+    <head>
+        
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,
+         maximum scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+       <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+        touch: true, 
+        pauseOnAction: false,
+        pauseOnHover: false,
+    });
+  });
+</script>
+    </head>
+
+    <body>
+<!--Este es el menu que ocuparemos en todas las paginas-->
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-soccer-ball">Sports Service</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                 <a href="">Inicio</a>
+                 <a href="paginas/quienessomos.html">Quienes somos ?</a>
+                 <a href="paginas/servicios.html">Servicios</a>
+                 <a href="paginas/contactanos.html">Contactanos</a>
+                </nav>
+            </div>
+        </header>
+<!--El banner tipo carrucel esta aqui definiendo las clases flexslider y slides quien en el css de estilos seran configurados-->        
+<body>
+
+    <div class="flexslider">
+    <ul class="slides">
+        <li><img src="img/futbol-bnr.jpg" alt=""></li>
+        <li><img src="img/bnr-basket.jpg" alt=""></li>
+        <li><img src="img/tenis-bnr.jpg" alt=""></li>
+        <li><img src="img/bnr-futbol.jpg" alt=""></li>
+    </ul>
+    </div>
+    
+    
+        </body>
+    
+            <body>
+                <div class="textogaleria">
+                <h2>Galeria de imagenes</h2>
+              
+                <!--Estas son las imagenes de la galeria creada en el inicio que estaran modificadas en estilos-->
+                <ul class="galeria">
+                <li><a href="#img1"><img src="img/cancha1.jpg"></a></li>
+                <li><a href="#img2"><img src="img/cancha2.jpg"></a></li>
+                <li><a href="#img3"><img src="img/cancha3.jpg"></a></li>
+                <li><a href="#img4"><img src="img/cancha4.jpg"></a></li>
+                <li><a href="#img5"><img src="img/cancha5.jpg"></a></li>
+                 <li><a href="#img6"><img src="img/cancha6.jpg"></a></li>
+                 
+                
+
+
+                </ul>
+<!--Aqui se expandiran cada una de las imagenes de la galeria con su respectivos botones de siguiente, volver y cerrar. Estos tambien modificados en el css estilos-->
+                <div class="modal" id="img1">
+                <h3>Proyecto 1</h3>
+                    <div class="imagenproyecto">
+                        <a href="#img4">&#60;</a>
+                        <a href="#img2"><img src="img/cancha1.jpg" alt=""></a>
+                        <a href="#img2">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                
+                    <div class="modal" id="img2">
+                <h3>Proyecto 2</h3>
+                    <div class="imagenproyecto">
+                        <a href="#img1">&#60;</a>
+                        <a href="#img3"><img src="img/cancha2.jpg" alt=""></a>
+                        <a href="#img3">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                
+                  <div class="modal" id="img3">
+                <h3>Proyecto 3</h3>
+                    <div class="imagenproyecto">
+                        <a href="#img2">&#60;</a>
+                        <a href="#img4"><img src="img/cancha3.jpg" alt=""></a>
+                        <a href="#img4">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                
+                 <div class="modal" id="img4">
+                <h3>Proyecto 4</h3>
+                    <div class="imagenproyecto">
+                        <a href="#img3">&#60;</a>
+                        <a href="#img5"><img src="img/cancha4.jpg" alt=""></a>
+                        <a href="#img5">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                
+                 <div class="modal" id="img5">
+                <h3>Proyecto 5</h3>
+                    <div class="imagenproyecto">
+                        <a href="#img4">&#60;</a>
+                        <a href="#img6"><img src="img/cancha5.jpg" alt=""></a>
+                        <a href="#img6">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                
+                 <div class="modal" id="img6">
+                <h3>Proyecto 6</h3>
+                    <div class="imagenproyecto">
+                        <a href="#img5">&#60;</a>
+                        <a href="#img7"><img src="img/cancha6.jpg" alt=""></a>
+                        <a href="#img7">></a>
+                    </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+       
+        <body>
+         <main>
+<!--Aqui agregamos los iconos con un background de diferente color, este en la clase contenedor, que sera modificaeda en el css info-->
+           <section id="iconos">
+               <h3>Diferentes tipos de deportes</h3>
+               <div class="contenedor">
+                <div class="info-icon">
+                    <img src="img/tenisicon.png" alt="">
+                    <h4>Canchas de tenis</h4>
+                   </div>
+                <div class="info-icon">
+                    <img src="img/basketicon.png" alt="">
+                    <h4>Cancha de basquetbol</h4>
+            </div>
+                <div class="info-icon">
+                    <img src="img/futbolicon.png" alt="">
+                    <h4>Canchas de futbol</h4>
+            </div>
+                   <div class="info-icon">
+                    <img src="img/volleyballicon.png" alt="">
+                    <h4>Canchas de volleyball</h4>
+            </div>
+                   
+               </div>
+               
+            </section> 
+        </main>
+        
+        <footer>
+<!--En el final de la pagina agregamos los iconos de las redes sociales con sus diferentes links correspondientes-->
+      <div class="sociales">
+                <a class="icon-facebook-squared" href="https://facebook.com/conejitaDaniellaChavez/"></a>
+                <a class="icon-instagram" href="https://www.instagram.com/daniellachavezofficial/?hl=es-la"></a>
+                <a class="icon-gmail" href="https://www.google.com/intl/es-419/gmail/about/#"></a>
+                <a class="icon-gplus" href="https://gsuite.google.com/intl/es-419/products/gmail/?utm_source=google&utm_medium=cpc&utm_campaign=latam-CL-all-es-dr-bkws-all-all-trial-b-latam-1007174-LUAC0007562-gmail-isolado&utm_content=text-ad-none-none-DEV_c-CRE_355295810387-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20BMM%20%7C%20Gmail-KWID_43700035906221456-kwd-19952397132-userloc_1003317&utm_term=KW_%2Bg%20%2Bmail-ST_%2Bg%20%2Bmail&gclsrc=aw.ds&gclsrc=aw.ds&gclid=EAIaIQobChMIzvn_ncfL5AIVFoGRCh0ZUAhuEAAYASAAEgJSJ_D_BwE"></a>
+                
+           
+        </div>
+        </footer>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
